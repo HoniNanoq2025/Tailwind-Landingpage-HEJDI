@@ -24,61 +24,47 @@
     <title>Tailwind Landingpage</title>
   </head>
 
-  <body
-    class="text-slate-800 bg-white antialiased dark:bg-slate-900 dark:text-slate-100"
-  >
+  <body class="text-slate-800 bg-white antialiased">
     <!-- ================ | NAVIGATION | ================ -->
-    <nav
-      class="sticky top-0 z-50 border-b bg-white/80 backdrop-blur dark:bg-slate-900/80 dark:border-slate-700"
-    >
+    <nav class="sticky top-0 z-50 border-b bg-white/80 backdrop-blur">
       <div
         class="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between"
       >
         <a href="#" class="font-bold">LandingCo</a>
-        <div class="flex items-center gap-3">
-          <button
-            id="theme-toggle"
-            class="p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800"
-            aria-label="Skift tema"
-          >
-            <!-- ikoner -->
-            <i class="fa-solid fa-moon dark-icon"></i>
-            <i class="fa-solid fa-sun light-icon hidden"></i>
-          </button>
-          <button
-            id="burger"
-            class="lg:hidden p-2 rounded hover:bg-slate-100 dark:hover:bg-slated-800"
-            aria-controls="main-menu"
-            aria-expanded="false"
-            aria-label="Åbn menu"
-          >
-            <!-- ikon -->
-            <i class="fa-solid fa-bars"></i>
-          </button>
-        </div>
+        <button
+          id="burger"
+          class="lg:hidden p-2 rounded hover:bg-slate-100"
+          id="burger"
+          aria-controls="main-menu"
+          aria-expanded="false"
+          aria-label="Åbn menu"
+        >
+          <!-- ikon -->
+          <i class="fa-solid fa-bars"></i>
+        </button>
         <ul
           id="main-menu"
-          class="hidden lg:flex gap-6 absolute left-0 right-0 top-16 lg:static bg-white dark:bg-slate-900 lg:bg-transparent lg:dark:bg-transparent border-b dark:border-slate-700 lg:border-0 px-4 py-3 lg:p-0 flex-col lg:flex-row"
+          class="hidden lg:flex gap-6 absolute left-0 right-0 top-16 lg:static bg-white lg:bg-transparent border-b lg:border-0 px-4 py-3 lg:p-0 flex-col lg:flex-row"
         >
           <li>
             <a
               href="#home"
-              class="py-2 block hover:text-slate-900 dark:hover:text-slate-100 text-slate-700 dark:text-slate-300"
+              class="py-2 block hover:text-slate-900 text-slate-700"
               >Home</a
             >
           </li>
           <li>
             <a
               href="#features"
-              class="py-2 block hover:text-slate-900 dark:hover:text-slate-100 text-slate-700 dark:text-slate-300"
+              class="py-2 block hover:text-slate-900 text-slate-700"
               >Features</a
             >
           </li>
           <li>
             <a
               href="#contact"
-              class="py-2 block hover:text-slate-900 dark:hover:text-slate-100 text-slate-700 dark:text-slate-300"
-              >Contact</a
+              class="py-2 block hover:text-slate-900 text-slate-700"
+              >Kontakt</a
             >
           </li>
           <li class="lg:ml-auto">
@@ -125,17 +111,15 @@
 
     <main>
       <!-- ================ | FEATURES | ================ -->
-      <section class="py-12 dark:bg-slate-800" id="features">
+      <section class="py-12" id="features">
         <div class="mx-auto max-w-6xl px-4">
           <div class="text-center mb-8">
             <h2 class="text-3xl font-bold">Features</h2>
-            <p class="text-slate-500 dark:text-slate-400">
-              Tre hurtige fordele
-            </p>
+            <p class="text-slate-500">Tre hurtige fordele</p>
           </div>
           <div class="grid gap-6 md:grid-cols-3">
             <article
-              class="bg-white dark:bg-slate-700 rounded-md shadow-sm overflow-hidden border border-slate-200 dark:border-slate-600"
+              class="bg-white rounded-md shadow-sm overflow-hidden border border-slate-200"
             >
               <img
                 src="/public/assets/img/nat-5.png"
@@ -145,13 +129,13 @@
               />
               <div class="p-5">
                 <h3 class="text-lg font-semibold">Hurtig opsætning</h3>
-                <p class="mt-1 text-slate-600 dark:text-slate-300">
+                <p class="mt-1 text-slate-600">
                   Kør på få minutter med klar struktur.
                 </p>
               </div>
             </article>
             <article
-              class="bg-white dark:bg-slate-700 rounded-md shadow-sm overflow-hidden border border-slate-200 dark:border-slate-600"
+              class="bg-white rounded-md shadow-sm overflow-hidden border border-slate-200"
             >
               <img
                 src="/public/assets/img/nat-6.png"
@@ -161,13 +145,13 @@
               />
               <div class="p-5">
                 <h3 class="text-lg font-semibold">Modulær styling</h3>
-                <p class="mt-1 text-slate-600 dark:text-slate-300">
+                <p class="mt-1 text-slate-600">
                   Genbrug komponenter og hold koden ren.
                 </p>
               </div>
             </article>
             <article
-              class="bg-white dark:bg-slate-700 rounded-md shadow-sm overflow-hidden border border-slate-200 dark:border-slate-600"
+              class="bg-white rounded-md shadow-sm overflow-hidden border border-slate-200"
             >
               <img
                 src="/public/assets/img/nat-7.png"
@@ -177,7 +161,7 @@
               />
               <div class="p-5">
                 <h3 class="text-lg font-semibold">Responsivt layout</h3>
-                <p class="mt-1 text-slate-600 dark:text-slate-300">
+                <p class="mt-1 text-slate-600">
                   Fungerer på mobil og desktop med få linjer.
                 </p>
               </div>
@@ -188,7 +172,7 @@
       <!-- ================================================== -->
 
       <!-- ================ | KONTAKT | ================ -->
-      <section id="contact" class="py-12 bg-slate-50 dark:bg-slate-900">
+      <section id="contact" class="py-12 bg-slate-50">
         <div class="mx-auto max-w-6xl px-4">
           <div class="grid lg:grid-cols-12 gap-8 items-start">
             <div class="lg:col-span-7">
@@ -197,13 +181,13 @@
               <!-- Succes besked -->
               <div
                 id="success-message"
-                class="hidden mb-4 p-4 bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800 text-green-800 dark:text-green-200 rounded-md"
+                class="hidden mb-4 p-4 bg-green-50 border border-green-200 text-green-800 rounded-md"
               >
                 <div class="flex items-center gap-2">
                   <i class="fa-solid fa-check-circle"></i>
                   <span class="font-medium">Beskeden er sendt!</span>
                 </div>
-                <p class="mt-1 text-sm text-green-700 dark:text-green-300">
+                <p class="mt-1 text-sm text-green-700">
                   Vi vender tilbage hurtigst muligt.
                 </p>
               </div>
@@ -219,67 +203,65 @@
                   <div>
                     <label
                       for="name"
-                      class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1"
+                      class="block text-sm font-medium text-slate-700 mb-1"
                       >Navn</label
                     >
                     <input
                       id="name"
                       type="text"
-                      class="w-full rounded-md border border-slate-300 dark:border-slate-600 dark:bg-slate-800 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      class="w-full rounded-md border border-slate-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                       required
                     />
                     <p
-                      class="error-message hidden mt-1 text-sm text-red-600 dark:text-red-400"
+                      class="error-message hidden mt-1 text-sm text-red-600"
                     ></p>
                   </div>
                   <div>
                     <label
                       for="email"
-                      class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1"
+                      class="block text-sm font-medium text-slate-700 mb-1"
                       >Email</label
                     >
                     <input
                       id="email"
                       type="email"
-                      class="w-full rounded-md border border-slate-300 dark:border-slate-600 dark:bg-slate-800 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      class="w-full rounded-md border border-slate-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                       required
                     />
                     <p
-                      class="error-message hidden mt-1 text-sm text-red-600 dark:text-red-400"
+                      class="error-message hidden mt-1 text-sm text-red-600"
                     ></p>
-                  </div>
-                  <div>
-                    <label
-                      for="subject"
-                      class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1"
-                      >Emne</label
-                    >
-                    <input
-                      id="subject"
-                      type="text"
-                      class="w-full rounded-md border border-slate-300 dark:border-slate-600 dark:bg-slate-800 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                    />
                   </div>
                 </div>
                 <div>
                   <label
+                    for="subject"
+                    class="block text-sm font-medium text-slate-700 mb-1"
+                    >Emne</label
+                  >
+                  <input
+                    id="subject"
+                    type="text"
+                    class="w-full rounded-md border border-slate-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label
                     for="message"
-                    class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1"
+                    class="block text-sm font-medium text-slate-700 mb-1"
                     >Besked</label
                   >
                   <textarea
                     id="message"
-                    class="w-full rounded-md border border-slate-300 dark:border-slate-600 dark:bg-slate-800 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    class="w-full rounded-md border border-slate-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     rows="5"
                     required
                   ></textarea>
-                  <p
-                    class="error-message hidden mt-1 text-sm text-red-600 dark:text-red-400"
-                  ></p>
+                  <p class="error-message hidden mt-1 text-sm text-red-600"></p>
                 </div>
                 <div>
                   <button
-                    class="inline-flex items-center justify-center rounded-md px-4 py-2 font-medium bg-slate-800 dark:bg-slate-700 text-white hover:bg-slate-900 dark:hover:bg-slate-600 cursor-pointer"
+                    class="inline-flex items-center justify-center rounded-md px-4 py-2 font-medium bg-slate-800 text-white hover:bg-slate-900 cursor-pointer"
                     type="submit"
                   >
                     Send
@@ -294,7 +276,7 @@
                 class="w-full h-64 object-cover rounded shadow-sm mb-3"
               />
               <h4 class="text-lg font-bold">Book en demo</h4>
-              <ul class="mt-1 text-slate-600 dark:text-slate-400 space-y-1">
+              <ul class="mt-1 text-slate-600">
                 <li>+45 12 34 56 78</li>
                 <li>kontakt@landingCo.dk</li>
                 <li>Hverdage 9-15</li>
@@ -308,11 +290,9 @@
     </main>
 
     <!-- ================ | FOOTER | ================ -->
-    <footer class="py-6 border-t dark:border-slate-700 dark:bg-slate-800">
+    <footer class="py-6 border-t">
       <div class="mx-auto max-w-6xl px-4">
-        <small class="text-slate-500 dark:text-slate-400"
-          >&copy; 2025 LandingCo</small
-        >
+        <small class="text-slate-500">&copy; 2025 LandingCo</small>
       </div>
     </footer>
 
@@ -321,37 +301,6 @@
     <!-- ================ | VANILLA SCRIPT | ================ -->
     <script>
       (function () {
-        // ========== DARK MODE ==========
-        const themeToggle = document.getElementById("theme-toggle");
-        const html = document.documentElement;
-        const darkIcon = themeToggle.querySelector(".dark-icon");
-        const lightIcon = themeToggle.querySelector(".light-icon");
-
-        // Tjek efter gemt theme eller systempræference
-        const savedTheme = localStorage.getItem("theme");
-        const systemPrefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
-        ).matches;
-
-        if (savedTheme === "dark" || (!savedTheme && systemPrefersDark)) {
-          html.classList.add("dark");
-          darkIcon.classList.add("hidden");
-          lightIcon.classList.remove("hidden");
-        }
-
-        themeToggle.addEventListener("click", () => {
-          html.classList.toggle("dark");
-          darkIcon.classList.toggle("hidden");
-          lightIcon.classList.toggle("hidden");
-
-          // Gem præference
-          if (html.classList.contains("dark")) {
-            localStorage.setItem("theme", "dark");
-          } else {
-            localStorage.setItem("theme", "light");
-          }
-        });
-
         // ========== BURGER MENU ==========
         const btn = document.getElementById("burger");
         const menu = document.getElementById("main-menu");

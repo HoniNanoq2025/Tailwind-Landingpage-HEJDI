@@ -9,9 +9,14 @@
     scroll-behavior: smooth;
   }
   body {
-    font-family: "Raleway", system-ui, -apple-system, "Segoe UI", "Roboto", Arial,
-      sans-serif;
+    font-family: "Raleway", system-ui, -apple-system, "Segoe UI", "Roboto",
+      Arial, sans-serif;
   }
+}
+
+/* Dark-mode override af hero-billedet */
+.dark {
+  --hero-img: url("/public/assets/img/hero.png");
 }
 
 /* Plain CSS (ikke i components-lag) for hero overlay */
