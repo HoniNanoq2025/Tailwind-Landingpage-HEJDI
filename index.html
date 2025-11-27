@@ -345,7 +345,7 @@
 
           const inputs = form.querySelectorAll("input, textarea");
           inputs.forEach((input) => {
-            input.classList.remove("border-red-500", "dark:border-red-400");
+            input.classList.remove("border-red-500");
           });
 
           let isValid = true;
@@ -399,7 +399,7 @@
         });
 
         function showError(input, message) {
-          input.classList.add("border-red-500", "dark:border-red-400");
+          input.classList.add("border-red-500");
           const errorMsg = input.parentElement.querySelector(".error-message");
           if (errorMsg) {
             errorMsg.textContent = message;
