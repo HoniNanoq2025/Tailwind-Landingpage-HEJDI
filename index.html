@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- ================ | GOOGLE FONT | ================ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ================ | TAILWIND OUTPUT | ================ -->
+    <link rel="stylesheet" href="/public/css/output.css" />
+    <title>Tailwind Landingpage</title>
+  </head>
+
+  <body class="text-slate-800 bg-white antialiased">
+    <!-- ================ | NAVIGATION | ================ -->
+    <nav class="sticky top-0 z-50 border-b bg-white/80 backdrop-blur">
+      <div
+        class="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between"
+      >
+        <a href="#" class="font-bold">LandingCo</a>
+        <button
+          id="burger"
+          class="lg:hidden p-2 rounded hover:bg-slate-100"
+          id="burger"
+          aria-controls="main-menu"
+          aria-expanded="false"
+          aria-label="Åbn menu"
+        >
+          <!-- ikon -->
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul
+          id="main-menu"
+          class="hidden lg:flex gap-6 absolute left-0 right-0 top-16 lg:static bg-white lg:bg-transparent border-b lg:border-0 px-4 py-3 lg:p-0 flex-col lg:flex-row"
+        >
+          <li>
+            <a
+              href="#home"
+              class="py-2 block hover:text-slate-900 text-slate-700"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#features"
+              class="py-2 block hover:text-slate-900 text-slate-700"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="py-2 block hover:text-slate-900 text-slate-700"
+              >Contact</a
+            >
+          </li>
+          <li class="lg:ml-auto">
+            <a
+              href="#features"
+              class="inline-flex items-center justify-center rounded-md px-5 py-2 text-sm font-medium bg-blue-600 text-white hover:bg-blue-700"
+              >Se features</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ================================================== -->
+
+    <!-- ================ | HEADER/HERO | ================ -->
+    <header class="hero text-white" id="home">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="min-h-[60vh] grid items-center py-10">
+          <div class="max-w-3xl">
+            <h1 class="text-4xl md:text-5xl font-bold">
+              Byg hurtige, klare landingssider
+            </h1>
+            <p class="mt-3 text-lg/7 text-slate-200">
+              Kort og skarp value proposition. Tailwind giver et responsivt
+              fundament - uden tungt setup.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a
+                href="#features"
+                class="inline-flex items-center justify-center rounded-md px-6 py-3 text-base font-medium bg-blue-600 text-white hover:bg-blue-700"
+                >Se features</a
+              >
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center rounded-md px-6 py-3 text-base font-medium border border-white/80 text-white hover:bg-white hover:text-slate-900"
+                >Kontakt</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ================================================== -->
+
+    <main>
+      <!-- ================ | FEATURES | ================ -->
+      <section class="py-12" id="features">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold">Features</h2>
+            <p class="text-slate-500">Tre hurtige fordele</p>
+          </div>
+          <div class="grid gap-6 md:grid-cols-3">
+            <article
+              class="bg-white rounded-md shadow-sm overflow-hidden border border-slate-200"
+            >
+              <img
+                src="/public/assets/img/nat-5.png"
+                alt="Hurtig opsætning"
+                class="w-full object-cover h-[180px]"
+                height="180"
+              />
+              <div class="p-5">
+                <h3 class="text-lg font-semibold">Hurtig opsætning</h3>
+                <p class="mt-1 text-slate-600">
+                  Kør på få minutter med klar struktur.
+                </p>
+              </div>
+            </article>
+            <article
+              class="bg-white rounded-md shadow-sm overflow-hidden border border-slate-200"
+            >
+              <img
+                src="/public/assets/img/nat-6.png"
+                alt="Modulær styling"
+                class="w-full object-cover h-[180px]"
+                height="180"
+              />
+              <div class="p-5">
+                <h3 class="text-lg font-semibold">Modulær styling</h3>
+                <p class="mt-1 text-slate-600">
+                  Genbrug komponenter og hold koden ren.
+                </p>
+              </div>
+            </article>
+            <article
+              class="bg-white rounded-md shadow-sm overflow-hidden border border-slate-200"
+            >
+              <img
+                src="/public/assets/img/nat-7.png"
+                alt="Responsivt layout"
+                class="w-full object-cover h-[180px]"
+                height="180"
+              />
+              <div class="p-5">
+                <h3 class="text-lg font-semibold">Responsivt layout</h3>
+                <p class="mt-1 text-slate-600">
+                  Fungerer på mobil og desktop med få linjer.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- ================================================== -->
+
+      <!-- ================ | KONTAKT | ================ -->
+      <section class="py-12 bg-slate-50" id="contact">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-7">
+              <h3 class="text-2xl font-bold mb-4">Kontakt</h3>
+              <form action="#" class="grid gap-4" method="post" novalidate>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      for="name"
+                      class="block text-sm font-medium text-slate-700 mb-1"
+                      >Navn</label
+                    >
+                    <input
+                      type="text"
+                      class="w-full rounded-md border border-slate-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-sm font-medium text-slate-700 mb-1"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="w-full rounded-md border border-slate-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="subject"
+                      class="block text-sm font-medium text-slate-700 mb-1"
+                      >Emne</label
+                    >
+                    <input
+                      type="text"
+                      class="w-full rounded-md border border-slate-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      id="subject"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-slate-700 mb-1"
+                    >Besked</label
+                  >
+                  <textarea
+                    id="message"
+                    class="w-full rounded-md border border-slate-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <div>
+                  <button
+                    class="inline-flex items-center justify-center rounded-md px-4 py-2 font-medium bg-slate-800 text-white hover:bg-slate-900 cursor-pointer"
+                    type="submit"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="lg:col-span-5">
+              <img
+                src="/public/assets/img/nat-8.png"
+                alt="Kontakt"
+                class="w-full h-64 object-cover rounded shadow-sm mb-3"
+              />
+              <h4 class="text-lg font-bold">Book en demo</h4>
+              <ul class="mt-1 text-slate-600 space-y-1">
+                <li>+45 12 34 56 78</li>
+                <li>kontakt@landingCo.dk</li>
+                <li>Hverdage 9-15</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================== -->
+    </main>
+
+    <!-- ================ | FOOTER | ================ -->
+    <footer class="py-6 border-t">
+      <div class="mx-auto max-w-6xl px-4">
+        <small class="text-slate-500">&copy; 2025 LandingCo</small>
+      </div>
+    </footer>
+
+    <!-- ================================================== -->
+
+    <!-- ================ | VANILLA SCRIPT | ================ -->
+    <script>
+      (function () {
+        const btn = document.getElementById("burger");
+        const menu = document.getElementById("main-menu");
+        if (!btn || !menu) return;
+
+        const HIDDEN = "hidden";
+
+        function setOpen(open) {
+          btn.setAttribute("aria-expanded", String(open));
+          // Toggler kun 'hidden' - 'lg:flex' får lov at vinde på desktop
+          menu.classList.toggle(HIDDEN, !open);
+        }
+
+        btn.addEventListener("click", () => {
+          const open = btn.getAttribute("aria-expanded") === "true";
+          setOpen(!open);
+        });
+
+        // Luk på ESC (mobil)
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") setOpen(false);
+        });
+
+        // Luk efter klik på link (mobil)
+        document.addEventListener("click", (e) => {
+          if (e.target.closest("a")) setOpen(false);
+        });
+
+        // Sikre korrekt state ved resize (fx når telefon roteres)
+        const mq = window.matchMedia("(min-width: 1024px)"); //lg
+        mq.addEventListener?.("change", () => setOpen(false));
+      })();
+    </script>
+
+    <!-- ================================================== -->
+  </body>
+</html>

@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Minimal global/base tweaks */
+@layer base {
+  :root {
+    --hero-img: url("/public/assets/img/hero.png");
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Raleway", system-ui, -apple-system, "Segoe UI", "Roboto", Arial,
+      sans-serif;
+  }
+}
+
+/* Plain CSS (ikke i components-lag) for hero overlay */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    var(--hero-img) center/cover no-repeat;
+}
