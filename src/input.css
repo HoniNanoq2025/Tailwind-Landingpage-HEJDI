@@ -14,11 +14,6 @@
   }
 }
 
-/* Dark-mode override af hero-billedet */
-.dark {
-  --hero-img: url("/public/assets/img/hero.png");
-}
-
 /* Plain CSS (ikke i components-lag) for hero overlay */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
